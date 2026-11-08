@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизация</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <section id="authSection" class="card">
+            <h1>Добро пожаловать</h1>
+            <div class="forms">
+                <form id="registerForm">
+                    <h2>Регистрация</h2>
+                    <input id="registerName" type="text" placeholder="Имя" required>
+                    <input id="registerEmail" type="email" placeholder="Email" required>
+                    <input id="registerPassword" type="password" placeholder="Пароль" required>
+                    <button type="submit">Зарегистрироваться</button>
+                </form>
+
+                <form id="loginForm">
+                    <h2>Вход</h2>
+                    <input id="loginEmail" type="email" placeholder="Email" required>
+                    <input id="loginPassword" type="password" placeholder="Пароль" required>
+                    <button type="submit">Войти</button>
+                </form>
+            </div>
+            <p id="message"></p>
+        </section>
+
+        <section id="profileSection" class="card hidden">
+            <h1>Мой профиль</h1>
+            <div id="profile"></div>
+            <button id="logoutButton">Выйти</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
